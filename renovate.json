@@ -3,5 +3,12 @@
   "extends": [
     "config:recommended",
     "mergeConfidence:all-badges"
+  ],
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["major", "minor", "patch"],
+      "automerge": true,
+      "automergeType": "pr"
+    }
   ]
 }
