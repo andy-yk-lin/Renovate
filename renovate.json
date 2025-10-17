@@ -2,13 +2,13 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:recommended",
-    "mergeConfidence:all-badges",
-    "packageRules": [
-      {
-        "matchUpdateTypes": ["major", "minor", "patch"],
-        "automerge": true,
-        "automergeType": "pr"
-      }
-    ]
+    "mergeConfidence:all-badges"
+  ],
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["major", "minor", "patch"],
+      "automerge": true,
+      "automergeType": "pr"
+    }
   ]
 }
